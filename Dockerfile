@@ -39,7 +39,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         texlive-fonts-recommended \
         texlive-fonts-extra \
         texlive-latex-extra \
-        texlive-science &&\
+        texlive-science \
+        fonts-noto-cjk &&\
     rm -rf /var/lib/apt/lists/* && \
     pip3 install sympy pyyaml jsonschema && \
     gem install \
